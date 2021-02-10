@@ -31,6 +31,6 @@ The run_analysis.R script performs the following operations:
   - rename "angle" to "Angle"
   - rename "gravity" to "Gravity"
 
-- Create an independent tidy data set with the average of each variable for each activity and each subject
+- Create an independent tidy data set with the average of each variable for each activity and each subject, which is exported to WD as "tidydata.txt"
 
-# The result _tidydata.txt_ has 180 rows and 88 columns.
+### The result __tidydata.txt__ has 180 rows and 88 columns.
