@@ -11,4 +11,3 @@
 When running the script run_alaysis.R, the necessary datasets are automatically downloaded and unzipped from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
 You can find infos about the dataset here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
->>>>>>> fee8d67c12c942ec017c7b437e6d6b8743ccd868
