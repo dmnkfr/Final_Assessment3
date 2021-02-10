@@ -1,3 +1,5 @@
 # Final_Assessment3
-Getting and Cleaning Data Course - Final Assessment
-kj
+Coursera Course "Getting and Cleaning Data"" - Final Assessment
+
+
+
