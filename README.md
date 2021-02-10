@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# Final_Assessment3
-Coursera Course "Getting and Cleaning Data"" - Final Assessment
-
-
-
-=======
 # Coursera Course "Getting and Cleaning Data" - Course Project
 
 ## Content
