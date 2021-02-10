@@ -3,7 +3,7 @@
 The run_analysis.R script performs the following operations:
 
 - Check if the zip file already exists in WD; if not: download and unzip the file
-- Read the individual datasets
+- Read the individual datasets:
   - features <- features.txt (561 rows, 2 columns): Features come from the accelerometer and gyroscope raw signals tACC-XYZ and tGyro-XYZ
   - activities <- activity_labels.txt (6 rows, 2 columns): Activities performed when the  measurements were taken and its codes (labels)
   - subject_test <- test/subject_test.txt (2947 rows, 1 column): Test data of 9/30 individuals
@@ -13,11 +13,10 @@ The run_analysis.R script performs the following operations:
   - x_train <- test/X_train.txt (7352 rows, 561 columns): Recorded features of training data
   - y_train <- test/y_train.txt (7352 rows, 1 columns): Training data of activities
 
-- Merge the individuals datasets loaded in the previous step with __rbind()__
+- Merge the individuals datasets loaded in the previous step with _rbind()_
 - Extract the measurements on the mean and standard deviation for each measurement with select()
 - Change the activity codes to activity names stores in the "activities" dataframe
-- Appropriately label the data set with descriptive variable names using __gsub()__
-
+- Appropriately label the data set with descriptive variable names using _gsub()_:
   - rename column 2 to "activity"
   - rename "Acc" to "Accelerometer",
   - rename "Gyro" to "Gyroscope",
@@ -31,4 +30,7 @@ The run_analysis.R script performs the following operations:
   - rename "-freq()" to "Frequency"
   - rename "angle" to "Angle"
   - rename "gravity" to "Gravity"
-        
+
+- Create an independent tidy data set with the average of each variable for each activity and each subject
+
+# The result _tidydata.txt_ has 180 rows and 88 columns.
