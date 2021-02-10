@@ -13,7 +13,7 @@ The run_analysis.R script performs the following operations:
         * x_train <- test/X_train.txt (7352 rows, 561 columns): Recorded features of training data
         * y_train <- test/y_train.txt (7352 rows, 1 columns): Training data of activities
 
-- Merge the individuals datasets loaded in the previous step with rbind()
+- Merge the individuals datasets loaded in the previous step with __rbind()__
 - Extract the measurements on the mean and standard deviation for each measurement with select()
 - Change the activity codes to activity names stores in the "activities" dataframe
 - Appropriately label the data set with descriptive variable names:
