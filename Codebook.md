@@ -16,17 +16,17 @@ The run_analysis.R script performs the following operations:
 - Merge the individuals datasets loaded in the previous step with __rbind()__
 - Extract the measurements on the mean and standard deviation for each measurement with select()
 - Change the activity codes to activity names stores in the "activities" dataframe
-- Appropriately label the data set with descriptive variable names:
-        - names(cleandata)[2] = "activity"
-names(cleandata)<-gsub("Acc", "Accelerometer", names(cleandata))
-names(cleandata)<-gsub("Gyro", "Gyroscope", names(cleandata))
-names(cleandata)<-gsub("BodyBody", "Body", names(cleandata))
-names(cleandata)<-gsub("Mag", "Magnitude", names(cleandata))
-names(cleandata)<-gsub("^t", "Time", names(cleandata))
-names(cleandata)<-gsub("^f", "Frequency", names(cleandata))
-names(cleandata)<-gsub("tBody", "TimeBody", names(cleandata))
-names(cleandata)<-gsub("-mean()", "Mean", names(cleandata), ignore.case = TRUE)
-names(cleandata)<-gsub("-std()", "STD", names(cleandata), ignore.case = TRUE)
-names(cleandata)<-gsub("-freq()", "Frequency", names(cleandata), ignore.case = TRUE)
-names(cleandata)<-gsub("angle", "Angle", names(cleandata))
-names(cleandata)<-gsub("gravity", "Gravity", names(cleandata))
+- Appropriately label the data set with descriptive variable names using __gsub()__
+        - rename column 2 to "activity"
+        - rename "Acc" to "Accelerometer",
+        - rename "Gyro"to"Gyroscope",
+        - rename "BodyBody"to"Body",
+        - rename "Mag"to"Magnitude",
+        - rename "^t"to"Time",
+        - rename "^f"to"Frequency",
+        - rename "tBody"to"TimeBody",
+        - rename "-mean()"to"Mean"
+        - rename "-std()"to"STD"
+        - rename "-freq()"to"Frequency"
+        - rename "angle"to"Angle"
+        - rename "gravity"to"Gravity"
