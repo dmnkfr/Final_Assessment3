@@ -1,6 +1,6 @@
 # Coursera Course "Getting and Cleaning Data" - Course Project
 
-## This repo contains:
+## Content
 
 - an R-script called "run_analysis.R": This script reads the relevant files, merges them, extracts the relevant info, renames columns and variables to a readable format, and saves a tidy dataset
 - a codebook called "codebook.md": The codebook describes the data and the steps that transform the input data to the final tidy dataset.
