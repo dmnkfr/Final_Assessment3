@@ -17,19 +17,19 @@ The run_analysis.R script performs the following operations:
 - Extract the measurements on the mean and standard deviation for each measurement with select()
 - Change the activity codes to activity names stores in the "activities" dataframe
 - Appropriately label the data set with descriptive variable names using _gsub()_:
-  - rename column 2 to "activity"
-  - rename "Acc" to "Accelerometer",
-  - rename "Gyro" to "Gyroscope",
-  - rename "BodyBody" to "Body",
-  - rename "Mag" to "Magnitude",
-  - rename "^t" to "Time",
-  - rename "^f" to "Frequency",
-  - rename "tBody" to "TimeBody",
-  - rename "-mean()" to "Mean"
-  - rename "-std()" to "STD"
-  - rename "-freq()" to "Frequency"
-  - rename "angle" to "Angle"
-  - rename "gravity" to "Gravity"
+  - rename column "code" to "activity"
+  - replace "Acc" with "Accelerometer",
+  - replace "Gyro" with "Gyroscope",
+  - replace "BodyBody" with "Body",
+  - replace "Mag" with "Magnitude",
+  - replace "^t" with "Time",
+  - replace "^f" with "Frequency",
+  - replace "tBody" with "TimeBody",
+  - replace "-mean()" with "Mean"
+  - replace "-std()" with "STD"
+  - replace "-freq()" with "Frequency"
+  - replace "angle" with "Angle"
+  - replace "gravity" with "Gravity"
 
 - Create an independent tidy data set with the average of each variable for each activity and each subject, which is exported to WD as "tidydata.txt"
 
